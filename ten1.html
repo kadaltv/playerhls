@@ -26,12 +26,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://dai.google.com/linear/hls/event/wG75n5U8RrOKiFzaWObXbA/master.m3u8');
+    hls.loadSource('https://anym3u8player.com/player-generator/mplay.php?data=nCLCQmLtFml/wHRSNI+EmeWTWmXesB1ezksWh0tFfVmIJlISvNG4n8iGm3l+kilRPUY9D/kzWeqM3CzZn55vxZlWFFCFgZvT4UuxwB5Qs7G4+Ja8xP+EJWCDFGuRoXYnQR+/bCkZJjcQMW5xXOXOqiRDyq1+cTz23li1w/onf/8QFmBwYHeKZ6cN0ifAEjYqmyunNPir3tfJqdFhQdI2yZxoEQM3xdeGnwmmYt+kwU7U3H24lV+3FxcOxYst07Rl6jKpGDQZvXVA2ogW');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://dai.google.com/linear/hls/event/wG75n5U8RrOKiFzaWObXbA/master.m3u8';
+    video.src = 'https://anym3u8player.com/player-generator/mplay.php?data=nCLCQmLtFml/wHRSNI+EmeWTWmXesB1ezksWh0tFfVmIJlISvNG4n8iGm3l+kilRPUY9D/kzWeqM3CzZn55vxZlWFFCFgZvT4UuxwB5Qs7G4+Ja8xP+EJWCDFGuRoXYnQR+/bCkZJjcQMW5xXOXOqiRDyq1+cTz23li1w/onf/8QFmBwYHeKZ6cN0ifAEjYqmyunNPir3tfJqdFhQdI2yZxoEQM3xdeGnwmmYt+kwU7U3H24lV+3FxcOxYst07Rl6jKpGDQZvXVA2ogW';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
